@@ -105,18 +105,18 @@ const MyComponent = () => {
 
 **what is happing here?**
 
-    1. The `useEffect` hook is called with an empty array as the second argument. This means that the effect will only run on mount and unmount.
-    2. The effect function creates an interval that runs every second.
-    3. The effect function returns a cleanup function that clears the interval.
-    4. The component is rendered to the DOM.
-    5. After one second, the `setCount` function is called, causing the component to re-render.
-    6. The effect function runs again, creating a new interval.
-    7. The cleanup function from the previous render is called, clearing the old interval.
-    8. After another second, the `setCount` function is called again, causing the component to re-render.
-    9. The effect function runs again, creating a new interval.
-    10. The cleanup function from the previous render is called, clearing the old interval.
-    11. The component is removed from the DOM.
-    12. The cleanup function is called, clearing the interval.
+1. The `useEffect` hook is called with an empty array as the second argument. This means that the effect will only run on mount and unmount.
+2. The effect function creates an interval that runs every second.
+3. The effect function returns a cleanup function that clears the interval.
+4. The component is rendered to the DOM.
+5. After one second, the `setCount` function is called, causing the component to re-render.
+6. The effect function runs again, creating a new interval.
+7. The cleanup function from the previous render is called, clearing the old interval.
+8. After another second, the `setCount` function is called again, causing the component to re-render.
+9. The effect function runs again, creating a new interval.
+10. The cleanup function from the previous render is called, clearing the old interval.
+11. The component is removed from the DOM.
+12. The cleanup function is called, clearing the interval.
 
 ## how to fetch data with useEffect?
 
@@ -144,13 +144,13 @@ const MyComponent = () => {
 
 **what is happing here?**
 
-    1. The `useEffect` hook is called with an empty array as the second argument. This means that the effect will only run on mount and unmount.
-    2. The effect function calls `fetchData`, which makes a request to an API and sets the response data in state.
-    3. The component is rendered to the DOM.
-    4. The effect function runs, making the request to the API.
-    5. The response data is set in state.
-    6. The component is re-rendered with the response data.
-    7. The component is removed from the DOM.
+1. The `useEffect` hook is called with an empty array as the second argument. This means that the effect will only run on mount and unmount.
+2. The effect function calls `fetchData`, which makes a request to an API and sets the response data in state.
+3. The component is rendered to the DOM.
+4. The effect function runs, making the request to the API.
+5. The response data is set in state.
+6. The component is re-rendered with the response data.
+7. The component is removed from the DOM.
 
 ## what can I do with useEffect?
 

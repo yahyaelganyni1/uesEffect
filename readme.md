@@ -156,20 +156,20 @@ const MyComponent = () => {
 
 `useEffect` is a great place to perform side effects in function components. Some common use cases include:
 
-    * Fetching data from an API
-    * Setting up event listeners
-    * Setting up timers
-    * Logging to the console
-    * Updating component state
-    * Performing side effects in response to prop or state or context changes
+- Fetching data from an API
+- Setting up event listeners
+- Setting up timers
+- Logging to the console
+- Updating component state
+- Performing side effects in response to prop or state or context changes
 
 ## what i can't do with useEffect?
 
 `useEffect` is not a good place to perform synchronous side effects. Some common use cases that are not a good fit for `useEffect` include:
 
-    * Updating component state synchronously
-    * Performing synchronous side effects in response to prop or state or context changes
-    * Calling imperative APIs that have side effects like `localStorage.setItem` or `document.title = 'Hello, world!'`
+- Updating component state synchronously
+- Performing synchronous side effects in response to prop or state or context changes
+- Calling imperative APIs that have side effects like `localStorage.setItem` or `document.title = 'Hello, world!'`
 
 ## conclusion
 
